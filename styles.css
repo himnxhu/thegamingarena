@@ -481,10 +481,13 @@ button, input, select, textarea {
   align-items: center;
   gap: 12px;
   text-decoration: none;
+  min-width: 0;
+  flex-shrink: 0;
 }
 .brand-icon {
   width: 42px;
   height: 42px;
+  flex-shrink: 0;
   border-radius: var(--radius-sm);
   background: linear-gradient(135deg, rgba(0, 240, 255, 0.2), rgba(168, 85, 247, 0.2));
   border: 1px solid rgba(0, 240, 255, 0.4);
@@ -502,14 +505,17 @@ button, input, select, textarea {
 .brand-text-wrap {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  min-width: 0;
 }
 .brand-name {
   font-family: var(--font-heading);
-  font-size: 1.12rem;
+  font-size: 1.15rem;
   font-weight: 900;
   color: #ffffff;
   letter-spacing: 0.05em;
-  line-height: 1.1;
+  line-height: 1.15;
+  white-space: nowrap;
 }
 .brand-name span {
   color: var(--neon-cyan);
@@ -521,8 +527,10 @@ button, input, select, textarea {
   color: var(--neon-green);
   display: flex;
   align-items: center;
-  gap: 5px;
-  margin-top: 2px;
+  gap: 6px;
+  margin-top: 3px;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
 }
 
 /* Nav Menu Links */
@@ -2700,6 +2708,31 @@ button, input, select, textarea {
   .nav-menu, .btn-desktop-only, .codepeek-header-search {
     display: none;
   }
+  .codepeek-search-trigger {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    gap: 6px;
+  }
+  .codepeek-search-trigger kbd {
+    display: none;
+  }
+  .brand-logo {
+    gap: 9px;
+  }
+  .brand-icon {
+    width: 36px;
+    height: 36px;
+  }
+  .brand-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  .brand-name {
+    font-size: 1rem;
+  }
+  .brand-status-indicator {
+    font-size: 0.7rem;
+  }
   .mobile-toggle {
     display: flex;
   }
@@ -2757,6 +2790,34 @@ button, input, select, textarea {
 }
 
 @media (max-width: 480px) {
+  .nav-container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .brand-logo {
+    gap: 8px;
+  }
+  .brand-icon {
+    width: 34px;
+    height: 34px;
+  }
+  .brand-name {
+    font-size: 0.92rem;
+    letter-spacing: 0.03em;
+  }
+  .brand-status-indicator {
+    font-size: 0.68rem;
+    gap: 4px;
+  }
+  .nav-actions {
+    gap: 8px;
+  }
+  .codepeek-search-trigger span {
+    display: none;
+  }
+  .codepeek-search-trigger {
+    padding: 7px;
+  }
   .container {
     padding-left: 16px;
     padding-right: 16px;
