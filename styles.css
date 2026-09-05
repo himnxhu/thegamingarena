@@ -97,8 +97,8 @@
 }
 
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--header-height) + 20px);
+  scroll-behavior: auto;
+  scroll-padding-top: calc(var(--header-height) + 16px);
   -webkit-text-size-adjust: 100%;
 }
 
@@ -627,21 +627,22 @@ button, input, select, textarea {
   height: 22px;
 }
 
-/* Mobile Drawer (CSSUI Slideout Styled) */
+/* Mobile Drawer (Clean Instant Display - No Slide Up/Down) */
 .mobile-drawer {
   position: fixed;
   top: var(--header-height);
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(8, 8, 8, 0.97);
+  background: rgba(8, 8, 8, 0.98);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   padding: 24px;
   overflow-y: auto;
-  transform: translateY(-110%);
   opacity: 0;
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.15s ease, visibility 0.15s ease;
   z-index: 999;
   border-bottom: 1px solid var(--border-medium);
   display: flex;
@@ -653,8 +654,9 @@ button, input, select, textarea {
   }
 }
 .mobile-drawer.open {
-  transform: translateY(0);
   opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
 }
 .mobile-nav-links {
   list-style: none;
