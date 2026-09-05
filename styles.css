@@ -639,6 +639,11 @@ button, input, select, textarea {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 769px) {
+  .mobile-drawer {
+    display: none !important;
+  }
+}
 .mobile-drawer.open {
   transform: translateY(0);
   opacity: 1;

@@ -121,21 +121,28 @@ function initBrandAndConfig() {
  * Calculates current open/closed status based on current local time
  */
 function initLiveHoursStatus() {
-  const { openHour24, closeHour24, displayTime } = ARENA_CONFIG.openingHours;
+  const { openHour24, closeHour24, displayTime, closedDays } = ARENA_CONFIG.openingHours;
+  const closedDayList = closedDays || [];
 
   function updateStatus() {
     const now = new Date();
+    const dayOfWeek = now.getDay(); // 0 = Sunday, 1 = Monday, etc.
+    const isClosedToday = closedDayList.includes(dayOfWeek);
+
     const currentHour = now.getHours();
     const currentMinutes = now.getMinutes();
     const currentTimeDecimal = currentHour + (currentMinutes / 60);
 
-    const isOpen = currentTimeDecimal >= openHour24 && currentTimeDecimal < closeHour24;
+    const isOpen = !isClosedToday && currentTimeDecimal >= openHour24 && currentTimeDecimal < closeHour24;
 
     const livePills = document.querySelectorAll(".live-status-pill");
     livePills.forEach(pill => {
       if (isOpen) {
         pill.className = "live-status-badge status-open";
         pill.innerHTML = `<span class="pulse-dot"></span> OPEN NOW • Closes ${formatHourTo12(closeHour24)}`;
+      } else if (isClosedToday) {
+        pill.className = "live-status-badge status-closed";
+        pill.innerHTML = `<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#ff3366;"></span> CLOSED TODAY (Monday Off)`;
       } else {
         pill.className = "live-status-badge status-closed";
         pill.innerHTML = `<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#ff3366;"></span> CLOSED NOW • Opens ${formatHourTo12(openHour24)}`;
@@ -148,6 +155,9 @@ function initLiveHoursStatus() {
       if (isOpen) {
         navStatus.innerHTML = `<span class="pulse-dot"></span> Open Today (${displayTime})`;
         navStatus.style.color = "var(--neon-green)";
+      } else if (isClosedToday) {
+        navStatus.innerHTML = `<span style="color:#ff3366;">●</span> Closed Today (Monday Off)`;
+        navStatus.style.color = "var(--text-muted)";
       } else {
         navStatus.innerHTML = `<span style="color:#ff3366;">●</span> Closed • Opens ${formatHourTo12(openHour24)}`;
         navStatus.style.color = "var(--text-muted)";

@@ -35,8 +35,8 @@ const ARENA_CONFIG = {
     whatsappDefaultMessage: "Hi The Gaming Arena! I'd like to ask about station availability, game prices, or tournaments.",
 
     // Instagram username / URL (e.g., "https://instagram.com/thegamingarena" or username)
-    instagram: "[INSTAGRAM]",
-    instagramHandle: "@[INSTAGRAM_HANDLE]",
+    instagram: "https://www.instagram.com/thegamingarenaaa?igsi=YWI4Ym1sdGJ0ZTl3",
+    instagramHandle: "https://www.instagram.com/thegamingarenaaa?igsi=YWI4Ym1sdGJ0ZTl3",
 
     // Optional email
     email: "contact@thegamingarena.com",
@@ -44,13 +44,15 @@ const ARENA_CONFIG = {
 
   // --- OPENING HOURS (Used for display and real-time open/closed status indicator) ---
   openingHours: {
-    displayDays: "Monday – Sunday",
+    displayDays: "Tuesday – Sunday (Monday Closed)",
     displayTime: "11:00 AM – 10:00 PM",
+    // Days of week closed: 0 = Sunday, 1 = Monday, 2 = Tuesday, etc.
+    closedDays: [1],
     // 24-hour format integers for real-time calculation:
     openHour24: 11,
     closeHour24: 22,
     timezone: "Asia/Kolkata",
-    counterNote: "Last station check-in is at 9:30 PM. Walk-ins welcome anytime!",
+    counterNote: "Last station check-in is at 9:30 PM. Walk-ins welcome Tuesday to Sunday!",
   },
 
   // --- GAME PRICES ---
@@ -107,9 +109,9 @@ const ARENA_CONFIG = {
   maps: {
     // If you have a Google Maps embed iframe src, paste it here.
     // Default fallback shows an interactive search query embed for the address:
-    embedUrl: "https://maps.google.com/maps?q=[ENTER+GAMING+ARENA+ADDRESS+HERE]&t=&z=15&ie=UTF8&iwloc=&output=embed",
+    embedUrl: "https://maps.google.com/maps?q=[Shop No 1, near Lal Bhag Colony Road, Sector 6, Avas Vikas Colony, Lohamandi, Agra, Uttar Pradesh 282007]&t=&z=15&ie=UTF8&iwloc=&output=embed",
     // Link for the "Get Directions" button:
-    directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=[ENTER+GAMING+ARENA+ADDRESS+HERE]"
+    directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=[Shop No 1, near Lal Bhag Colony Road, Sector 6, Avas Vikas Colony, Lohamandi, Agra, Uttar Pradesh 282007]"
   },
 
   // --- UPCOMING TOURNAMENTS ---
