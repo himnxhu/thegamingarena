@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>The Gaming Arena | PS5, PS4 & Tekken Arcade Gaming Café</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="The Gaming Arena is your local gaming café for PS5, PS4, Tekken arcade cabinets and competitive gaming. Play EA FC, Tekken, GTA V and more for only ₹50/hr!">
+  <meta name="keywords" content="gaming cafe, gaming arena, PS5 gaming lounge, PS4 games, Tekken arcade, playstation cafe, competitive gaming, console gaming cafe, EA FC tournaments">
+  <meta name="author" content="The Gaming Arena">
+  <meta name="theme-color" content="#080808">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Sharing Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thegamingarena.com/">
+  <meta property="og:title" content="The Gaming Arena | Play. Compete. Enjoy.">
+  <meta property="og:description" content="Your local gaming destination for PlayStation 5, PS4, Tekken arcade and multiplayer gaming. Rates starting from ₹50/hr and ₹10 arcade coins!">
+  <meta property="og:image" content="favicon.svg">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Gaming Arena | Play. Compete. Enjoy.">
+  <meta name="twitter:description" content="Your local gaming destination for PlayStation, Tekken and competitive gaming.">
+  <meta name="twitter:image" content="favicon.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <!-- Google Fonts: Orbitron (Headings), Outfit (Body) & Rajdhani -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Outfit:wght@400;500;600;700;800&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet (CodePeek Dark UI & CSSUI Component System) -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Local Business Schema (JSON-LD) for Local SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EntertainmentBusiness",
+    "name": "The Gaming Arena",
+    "image": "favicon.svg",
+    "description": "Your local gaming destination for PlayStation 5, PlayStation 4, Tekken arcade machines, and multiplayer competitive gaming.",
+    "priceRange": "₹10 - ₹50",
+    "openingHours": "Mo-Su 11:00-22:00",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[ENTER GAMING ARENA ADDRESS HERE]"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Ambient Glow Orbs -->
+  <div class="ambient-glow-orb orb-1" aria-hidden="true"></div>
+  <div class="ambient-glow-orb orb-2" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       NAVIGATION BAR
+       ========================================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="The Gaming Arena Home">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="6" width="20" height="12" rx="4"></rect>
+            <path d="M6 12h4m-2-2v4m9-3h.01m2 2h.01"></path>
+          </svg>
+        </div>
+        <div class="brand-text-wrap">
+          <span class="brand-name">THE GAMING <span>ARENA</span></span>
+          <div class="brand-status-indicator" id="nav-live-status">
+            <span class="pulse-dot"></span> Open Today (11 AM – 10 PM)
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#options" class="nav-link">Experience</a></li>
+          <li><a href="#prices" class="nav-link">Prices</a></li>
+          <li><a href="#games" class="nav-link">Games</a></li>
+          <li><a href="#tournaments" class="nav-link">Tournaments</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#location" class="nav-link">Location</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (CodePeek Search Trigger + Tactile CTA) -->
+      <div class="nav-actions">
+        <button class="codepeek-search-trigger" data-cmd-trigger type="button" aria-label="Quick Search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Search</span>
+          <kbd>⌘K</kbd>
+        </button>
+
+        <a href="#contact" class="btn btn-codepeek btn-sm btn-desktop-only">
+          <span>🎮 Book Station</span>
+        </a>
+
+        <!-- Mobile Drawer Toggle Button -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer (CSSUI Slideout Pattern) -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <ul class="mobile-nav-links">
+      <li><a href="#hero" class="mobile-nav-link"><span>🏠 Home</span> <span>→</span></a></li>
+      <li><a href="#options" class="mobile-nav-link"><span>🎮 Gaming Options</span> <span>→</span></a></li>
+      <li><a href="#prices" class="mobile-nav-link"><span>💰 Game Prices</span> <span>→</span></a></li>
+      <li><a href="#why-us" class="mobile-nav-link"><span>⚡ Why The Arena</span> <span>→</span></a></li>
+      <li><a href="#games" class="mobile-nav-link"><span>🕹️ What Can You Play</span> <span>→</span></a></li>
+      <li><a href="#tournaments" class="mobile-nav-link"><span>🏆 Tournaments</span> <span>→</span></a></li>
+      <li><a href="#gallery" class="mobile-nav-link"><span>📸 Café Gallery</span> <span>→</span></a></li>
+      <li><a href="#faq" class="mobile-nav-link"><span>❓ Arena FAQ</span> <span>→</span></a></li>
+      <li><a href="#location" class="mobile-nav-link"><span>📍 Find Us & Map</span> <span>→</span></a></li>
+      <li><a href="#contact" class="mobile-nav-link"><span>📞 Contact Us</span> <span>→</span></a></li>
+      <li><a href="#hours" class="mobile-nav-link"><span>⏰ Opening Hours</span> <span>→</span></a></li>
+    </ul>
+    <div style="display: flex; gap: 10px; margin-top: 10px;">
+      <a href="tel:[PHONE NUMBER]" class="btn btn-call cfg-phone-link" style="flex: 1;">
+        📞 Call
+      </a>
+      <a href="#" class="btn btn-whatsapp cfg-whatsapp-link" style="flex: 1;">
+        💬 WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- =======================================================================
+         1. HERO SECTION (CodePeek Cyber Mosaic + Command Search)
+         ======================================================================= -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Text Content -->
+          <div class="hero-content">
+            <div class="hero-tag">
+              <span class="badge badge-codepeek">
+                <span class="pulse-dot"></span> THE ULTIMATE LOCAL GAMING DESTINATION
+              </span>
+            </div>
+
+            <h1 class="hero-title">
+              <span class="title-glow">THE GAMING</span>
+              <span class="title-accent">ARENA</span>
+            </h1>
+
+            <div class="hero-tagline">
+              “Play. Compete. Enjoy.”
+            </div>
+
+            <p class="hero-subtitle">
+              Your local gaming destination for PlayStation, Tekken and competitive gaming. Grab a controller, squad up with friends, and experience smooth next-generation action.
+            </p>
+
+            <!-- CodePeek Interactive Command Search Bar -->
+            <div class="hero-search-box">
+              <div class="hero-search-input-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" id="hero-game-search" placeholder="Search games, consoles, prices or tournaments…" autocomplete="off">
+                <kbd>⌘K</kbd>
+              </div>
+              <div class="search-suggestions-dropdown" id="hero-search-results"></div>
+            </div>
+
+            <!-- Prominent Tactile 3D Buttons -->
+            <div class="hero-cta-group">
+              <a href="#prices" class="btn btn-primary btn-lg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="1" x2="12" y2="23"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+                View Prices
+              </a>
+              
+              <a href="#location" class="btn btn-secondary btn-lg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Find Us
+              </a>
+
+              <a href="#" class="btn btn-whatsapp cfg-whatsapp-link" style="padding: 14px 22px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+                </svg>
+                WhatsApp
+              </a>
+            </div>
+
+            <!-- Quick Stat Tickers -->
+            <div class="hero-quick-features">
+              <div class="quick-feature-item">
+                <div class="quick-feature-val">₹<span class="cfg-ps5-rate">50</span><span>/hr</span></div>
+                <div class="quick-feature-lbl">Console Gaming</div>
+              </div>
+              <div class="quick-feature-item">
+                <div class="quick-feature-val">₹10 <span>→ 6</span></div>
+                <div class="quick-feature-lbl">Tekken Coins</div>
+              </div>
+              <div class="quick-feature-item">
+                <div class="quick-feature-val">11 AM <span>– 10 PM</span></div>
+                <div class="quick-feature-lbl">Open Every Day</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual: Cyber Gaming Setup Card (CodePeek Component Showcase Style) -->
+          <div class="hero-visual-wrapper">
+            <div class="hero-visual-card">
+              <div class="visual-top-bar">
+                <span class="badge badge-green">
+                  <span class="pulse-dot"></span> LIVE BATTLE STATIONS
+                </span>
+                <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 700; letter-spacing: 0.05em;">4K 120HZ • ZERO LAG</span>
+              </div>
+
+              <div class="visual-screen-graphic">
+                <!-- Glowing Animated Gaming Controller Graphic -->
+                <svg class="controller-svg-anim" viewBox="0 0 512 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M160 30 C 190 20 322 20 352 30 C 385 42 430 110 410 190 C 395 245 345 240 320 200 C 295 160 217 160 192 200 C 167 240 117 245 102 190 C 82 110 127 42 160 30 Z"
+                        fill="#0c101c" stroke="#00f0ff" stroke-width="8" stroke-linejoin="round"/>
+                  <!-- Dpad -->
+                  <path d="M 160 75 L 175 75 L 175 90 L 190 90 L 190 105 L 175 105 L 175 120 L 160 120 L 160 105 L 145 105 L 145 90 L 160 90 Z" fill="#00f0ff"/>
+                  <!-- Action buttons -->
+                  <circle cx="340" cy="82" r="7" fill="#00ff88"/>
+                  <circle cx="322" cy="97" r="7" fill="#ff3366"/>
+                  <circle cx="358" cy="97" r="7" fill="#00f0ff"/>
+                  <circle cx="340" cy="112" r="7" fill="#a855f7"/>
+                  <!-- Thumbsticks -->
+                  <circle cx="205" cy="135" r="22" fill="#08090f" stroke="#a855f7" stroke-width="5"/>
+                  <circle cx="205" cy="135" r="9" fill="#00f0ff"/>
+                  <circle cx="307" cy="135" r="22" fill="#08090f" stroke="#a855f7" stroke-width="5"/>
+                  <circle cx="307" cy="135" r="9" fill="#00f0ff"/>
+                  <!-- Lightbar -->
+                  <rect x="236" y="55" width="40" height="8" rx="4" fill="#00f0ff"/>
+                </svg>
+
+                <div class="visual-screen-title">READY PLAYER ONE</div>
+                <div class="visual-screen-sub">PS5 • PS4 • TEKKEN FIGHT ARENA</div>
+              </div>
+
+              <div class="visual-stats-list">
+                <div class="visual-stat-row">
+                  <span class="stat-label">🎮 Display Output</span>
+                  <span class="stat-value" style="color: var(--neon-cyan);" data-tooltip="Ultra-low latency 120 FPS high refresh gaming monitors">4K HDR @ 120Hz ⓘ</span>
+                </div>
+                <div class="visual-stat-row">
+                  <span class="stat-label">🥊 Fighting Setups</span>
+                  <span class="stat-value" style="color: var(--neon-gold);" data-tooltip="Sanwa tournament-grade buttons and responsive microswitches">Low-Lag Arcade Sticks ⓘ</span>
+                </div>
+                <div class="visual-stat-row">
+                  <span class="stat-label">👥 Multiplayer Ready</span>
+                  <span class="stat-value" style="color: var(--neon-green);" data-tooltip="Full 4-player couch party and local split-screen co-op">Up to 4 Players Co-op ⓘ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         2. GAMING OPTIONS (CSSUI PURE CSS TABS & CARDS)
+         ======================================================================= -->
+    <section class="section" id="options">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-purple section-tag">EXPERIENCE THE THRILL</span>
+          <h2 class="section-title">GAMING <span class="highlight-cyan">OPTIONS</span></h2>
+          <p class="section-subtitle">
+            Whether you want next-gen graphics, classic multiplayer with your crew, or arcade 1v1 fighting bouts, we have the ultimate battle stations ready.
+          </p>
+        </div>
+
+        <!-- CSSUI Pure CSS Interactive Tabs Component (https://www.cssui.dev/docs/components/tabs/) -->
+        <div data-tabs role="tablist" aria-label="Gaming Station Options">
+          <!-- Radio controllers for pure CSS tab switching -->
+          <input id="tab-ps5" type="radio" name="station-tab" data-tab="tab-ps5" role="tab" checked>
+          <input id="tab-ps4" type="radio" name="station-tab" data-tab="tab-ps4" role="tab">
+          <input id="tab-tekken" type="radio" name="station-tab" data-tab="tab-tekken" role="tab">
+          <input id="tab-squad" type="radio" name="station-tab" data-tab="tab-squad" role="tab">
+
+          <!-- Tab Labels Navigation -->
+          <nav>
+            <label for="tab-ps5" data-tab-label="tab-ps5"><span class="tab-icon">⚡</span> PS5 Power</label>
+            <label for="tab-ps4" data-tab-label="tab-ps4"><span class="tab-icon">🕹️</span> PS4 Vault</label>
+            <label for="tab-tekken" data-tab-label="tab-tekken"><span class="tab-icon">🥊</span> Tekken Arcade</label>
+            <label for="tab-squad" data-tab-label="tab-squad"><span class="tab-icon">👥</span> Squad Lounge</label>
+          </nav>
+
+          <!-- Tab Panel 1: PS5 -->
+          <section data-tab-panel="tab-ps5" role="tabpanel">
+            <div class="station-panel-grid">
+              <div class="station-panel-info">
+                <div class="station-panel-badge-row">
+                  <span class="badge badge-cyan">NEXT-GEN POWER</span>
+                  <span class="badge badge-codepeek">₹50 / HOUR</span>
+                </div>
+                <h3 class="station-panel-title">PlayStation 5 Stations</h3>
+                <p class="station-panel-desc">
+                  Lightning-fast NVMe loads, breathtaking 4K visual fidelity, and DualSense haptic feedback for unbeatable match immersion.
+                </p>
+                <ul class="station-features-list">
+                  <li class="station-feature-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span><strong>Premium next-generation gaming</strong> in full 4K 120Hz</span>
+                  </li>
+                  <li class="station-feature-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span><strong>Multiplayer gaming</strong> (1 to 4 players local versus & co-op)</span>
+                  </li>
+                  <li class="station-feature-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span><strong>Popular PS5 titles</strong> pre-installed, patched, and season-ready</span>
+                  </li>
+                </ul>
+                <div style="margin-top: 10px;">
+                  <a href="#prices" class="btn btn-primary">Book PS5 Station</a>
+                </div>
+              </div>
+
+              <div class="station-panel-preview">
+                <div class="station-spec-card">
+                  <div class="station-spec-row">
+                    <span class="stat-label">🎮 System</span>
+                    <span class="stat-value" style="color: var(--neon-cyan);">Sony PlayStation 5</span>
+                  </div>
+                  <div class="station-spec-row">
+                    <span class="stat-label">📺 Screen</span>
+                    <span class="stat-value">Curved 4K HDR Gaming Monitor</span>
+                  </div>
+                  <div class="station-spec-row">
+                    <span class="stat-label">🕹️ Controller</span>
+                    <span class="stat-value">DualSense Adaptive Triggers</span>
+                  </div>
+                  <div class="station-spec-row">
+                    <span class="stat-label">⏱️ Rate</span>
+                    <span class="stat-value" style="color: var(--site-primary); font-weight: 800;">₹50 / hr flat</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Tab Panel 2: PS4 -->
+          <section data-tab-panel="tab-ps4" role="tabpanel">
+            <div class="station-panel-grid">
+              <div class="station-panel-info">
+                <div class="station-panel-badge-row">
+                  <span class="badge badge-purple">MASSIVE GAME VAULT</span>
+                  <span class="badge badge-codepeek">₹50 / HOUR</span>
+                </div>
+                <h3 class="station-panel-title">PlayStation 4 Stations</h3>
+                <p class="station-panel-desc">
+                  The iconic generation with hundreds of legendary multiplayer hits, action classics, and friendly sports rivalries.
+                </p>
+                <ul class="station-features-list">
+                  <li class="station-feature-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span><strong>Huge library of games</strong> across all genres</span>
+                  </li>
+                  <li class="station-feature-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span><strong>Multiplayer gaming</strong> & classic marathon co-op sessions</span>
+                  </li>
+                  <li class="station-feature-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Sanitized, high-comfort DualShock 4 wireless controllers</span>
+                  </li>
+                </ul>
+                <div style="margin-top: 10px;">
+                  <a href="#prices" class="btn btn-secondary">Play PS4 Now</a>
+                </div>
+              </div>
+
+              <div class="station-panel-preview">
+                <div class="station-spec-card">
+                  <div class="station-spec-row">
+                    <span class="stat-label">🎮 System</span>
+                    <span class="stat-value" style="color: var(--neon-purple);">Sony PlayStation 4</span>
+                  </div>
+                  <div class="station-spec-row">
+                    <span class="stat-label">📺 Screen</span>
+                    <span class="stat-value">High-Definition Low-Lag Display</span>
+                  </div>
+                  <div class="station-spec-row">
+                    <span class="stat-label">🕹️ Controller</span>
+                    <span class="stat-value">DualShock 4 Wireless</span>
+                  </div>
+                  <div class="station-spec-row">
+                    <span class="stat-label">⏱️ Rate</span>
+                    <span class="stat-value" style="color: var(--site-primary); font-weight: 800;">₹50 / hr flat</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Tab Panel 3: Tekken / Fighting -->
+          <section data-tab-panel="tab-tekken" role="tabpanel">
+            <div class="station-panel-grid">
+              <div class="station-panel-info">
+                <div class="station-panel-badge-row">
+                  <span class="badge badge-gold">ARCADE FIGHTING ZONE</span>
+                  <span class="badge badge-codepeek">FROM ₹10</span>
+                </div>
+                <h3 class="station-panel-title">Tekken / Fighting Cabinets</h3>
+                <p class="station-panel-desc">
+                  Feel the electric rush of genuine arcade combat, frame-perfect combo execution, and king-of-the-hill glory with your friends.
+                </p>
+                <ul class="station-features-list">
+                  <li class="station-feature-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span><strong>Arcade fighting experience</strong> with responsive arcade sticks</span>
+                  </li>
+                  <li class="station-feature-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span><strong>Competitive matches</strong> & local leaderboard rivalries</span>
+                  </li>
+                  <li class="station-feature-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Arcade token bundles starting at <strong>₹10 → 6 Coins</strong></span>
+                  </li>
+                </ul>
+                <div style="margin-top: 10px;">
+                  <a href="#prices" class="btn btn-codepeek">Get Arcade Coins</a>
+                </div>
+              </div>
+
+              <div class="station-panel-preview">
+                <div class="station-spec-card">
+                  <div class="station-spec-row">
+                    <span class="stat-label">🥊 Fighting Setup</span>
+                    <span class="stat-value" style="color: var(--neon-gold);">1v1 Head-to-Head Cabinet</span>
+                  </div>
+                  <div class="station-spec-row">
+                    <span class="stat-label">🕹️ Controls</span>
+                    <span class="stat-value">Sanwa Fight Sticks / Pads</span>
+                  </div>
+                  <div class="station-spec-row">
+                    <span class="stat-label">🪙 Token Cost</span>
+                    <span class="stat-value" style="color: var(--neon-green);">₹10 → 6 Coins (1.66/coin)</span>
+                  </div>
+                  <div class="station-spec-row">
+                    <span class="stat-label">🏆 Tournaments</span>
+                    <span class="stat-value">Weekly Saturday King Series</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Tab Panel 4: Squad Lounge -->
+          <section data-tab-panel="tab-squad" role="tabpanel">
+            <div class="station-panel-grid">
+              <div class="station-panel-info">
+                <div class="station-panel-badge-row">
+                  <span class="badge badge-green">CO-OP & PARTY</span>
+                  <span class="badge badge-codepeek">SQUAD READY</span>
+                </div>
+                <h3 class="station-panel-title">Squad & Multiplayer Lounge</h3>
+                <p class="station-panel-desc">
+                  Bring your entire friend group for 4-player football derbies, wrestling free-for-alls, and split-screen co-op sessions in a comfortable air-conditioned setting.
+                </p>
+                <ul class="station-features-list">
+                  <li class="station-feature-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span><strong>1 to 4 Players</strong> simultaneous split-screen combat</span>
+                  </li>
+                  <li class="station-feature-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Ergonomic gaming chairs and air-conditioned lounge comfort</span>
+                  </li>
+                  <li class="station-feature-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Cold energy drinks and refreshments available at the counter</span>
+                  </li>
+                </ul>
+                <div style="margin-top: 10px;">
+                  <a href="#contact" class="btn btn-whatsapp cfg-whatsapp-link">Reserve Squad Station</a>
+                </div>
+              </div>
+
+              <div class="station-panel-preview">
+                <div class="station-spec-card">
+                  <div class="station-spec-row">
+                    <span class="stat-label">👥 Capacity</span>
+                    <span class="stat-value" style="color: var(--neon-green);">Up to 4 Players per Station</span>
+                  </div>
+                  <div class="station-spec-row">
+                    <span class="stat-label">🛋️ Seating</span>
+                    <span class="stat-value">High-Back Ergonomic Lounge</span>
+                  </div>
+                  <div class="station-spec-row">
+                    <span class="stat-label">🍿 Refreshments</span>
+                    <span class="stat-value">Chilled Beverages Available</span>
+                  </div>
+                  <div class="station-spec-row">
+                    <span class="stat-label">🎉 Group Pass</span>
+                    <span class="stat-value" style="color: var(--site-primary);">Ask at counter for offers</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- Direct Options Grid (Preserves all requirement tokens and anchor links) -->
+        <div class="options-grid">
+          
+          <!-- Card 1: PS5 -->
+          <div class="option-card card-ps5">
+            <div>
+              <div class="option-icon-box">🎮</div>
+              <div class="option-header">
+                <span class="badge badge-cyan option-badge">NEXT-GEN POWER</span>
+                <h3 class="option-title">PlayStation 5</h3>
+                <p>Lightning-fast loads, stunning 4K visuals, and DualSense haptic feedback for unbeatable immersion.</p>
+              </div>
+
+              <ul class="option-features">
+                <li class="option-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Premium next-generation gaming</strong> in full 4K</span>
+                </li>
+                <li class="option-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Multiplayer gaming</strong> (1 to 4 players split-screen)</span>
+                </li>
+                <li class="option-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Popular PS5 titles</strong> installed & updated</span>
+                </li>
+                <li class="option-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Only <strong>₹50 / hour</strong> flat rate</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="option-footer">
+              <a href="#prices" class="btn btn-primary" style="width: 100%;">
+                Play Now
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: PS4 -->
+          <div class="option-card card-ps4">
+            <div>
+              <div class="option-icon-box">🎮</div>
+              <div class="option-header">
+                <span class="badge badge-purple option-badge">MASSIVE GAME VAULT</span>
+                <h3 class="option-title">PlayStation 4</h3>
+                <p>The iconic console with hundreds of legendary games, perfect for marathon sessions with friends.</p>
+              </div>
+
+              <ul class="option-features">
+                <li class="option-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Huge library of games</strong> across all genres</span>
+                </li>
+                <li class="option-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Multiplayer gaming</strong> & co-op adventures</span>
+                </li>
+                <li class="option-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>High comfort controllers & responsive screens</span>
+                </li>
+                <li class="option-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Only <strong>₹50 / hour</strong> flat rate</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="option-footer">
+              <a href="#prices" class="btn btn-secondary" style="width: 100%;">
+                Play Now
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Tekken / Fighting Games -->
+          <div class="option-card card-tekken">
+            <div>
+              <div class="option-icon-box">🥊</div>
+              <div class="option-header">
+                <span class="badge badge-gold option-badge">ARCADE FIGHTING ZONE</span>
+                <h3 class="option-title">Tekken / Fighting</h3>
+                <p>Feel the electric rush of genuine arcade combat, frame-perfect execution, and king-of-the-hill glory.</p>
+              </div>
+
+              <ul class="option-features">
+                <li class="option-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Arcade fighting experience</strong> with responsive controls</span>
+                </li>
+                <li class="option-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Competitive matches</strong> & local leaderboard rivalries</span>
+                </li>
+                <li class="option-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Perfect for 1v1 challenges</strong> with friends</span>
+                </li>
+                <li class="option-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Arcade token bundles starting at <strong>₹10 → 6 Coins</strong></span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="option-footer">
+              <a href="#prices" class="btn btn-codepeek" style="width: 100%;">
+                Challenge Now
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. PRICE SECTION (CodePeek Tier Cards & CSSUI Range Slider)
+         ======================================================================= -->
+    <section class="section prices-section" id="prices">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-codepeek section-tag">TRANSPARENT & AFFORDABLE</span>
+          <h2 class="section-title">GAME <span class="highlight-cyan">PRICES</span></h2>
+          <p class="section-subtitle">
+            Simple, honest pricing designed so you and your squad can play for hours without breaking the bank.
+          </p>
+        </div>
+
+        <!-- Consoles Flat Hourly Rates -->
+        <div class="pricing-main-grid">
+          
+          <!-- PS5 Pricing Card -->
+          <div class="console-price-card featured-card">
+            <div class="price-card-head">
+              <div>
+                <span class="badge badge-cyan">TOP TIER GAMING</span>
+                <h3 style="font-size: 1.8rem; margin-top: 8px;">PS5</h3>
+              </div>
+              <span style="font-size: 2.2rem;">🎮</span>
+            </div>
+
+            <div class="price-display-wrap">
+              <span class="price-currency">₹</span>
+              <span class="price-number cfg-ps5-rate">50</span>
+              <span class="price-unit">/ hour</span>
+            </div>
+
+            <ul class="price-perks">
+              <li class="price-perk-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Full access to latest PS5 games</span>
+              </li>
+              <li class="price-perk-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>4K High Refresh Rate Gaming Displays</span>
+              </li>
+              <li class="price-perk-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>DualSense wireless controllers</span>
+              </li>
+              <li class="price-perk-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Up to 4 players at the station</span>
+              </li>
+            </ul>
+
+            <a href="#contact" class="btn btn-primary" style="width: 100%;">
+              Book PS5 Station
+            </a>
+          </div>
+
+          <!-- PS4 Pricing Card -->
+          <div class="console-price-card">
+            <div class="price-card-head">
+              <div>
+                <span class="badge badge-purple">COMMUNITY FAVORITE</span>
+                <h3 style="font-size: 1.8rem; margin-top: 8px;">PS4</h3>
+              </div>
+              <span style="font-size: 2.2rem;">🕹️</span>
+            </div>
+
+            <div class="price-display-wrap">
+              <span class="price-currency">₹</span>
+              <span class="price-number cfg-ps4-rate">50</span>
+              <span class="price-unit">/ hour</span>
+            </div>
+
+            <ul class="price-perks">
+              <li class="price-perk-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Huge library of multiplayer classics</span>
+              </li>
+              <li class="price-perk-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Full HD ultra-responsive screens</span>
+              </li>
+              <li class="price-perk-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Clean, sanitized DualShock controllers</span>
+              </li>
+              <li class="price-perk-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Great for friendly squad tournaments</span>
+              </li>
+            </ul>
+
+            <a href="#contact" class="btn btn-secondary" style="width: 100%;">
+              Book PS4 Station
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Tekken Arcade-Style Coins Grid -->
+        <div class="tekken-arcade-wrapper">
+          <div class="tekken-arcade-head">
+            <div class="tekken-title-group">
+              <div class="arcade-coin-icon">🥊</div>
+              <div>
+                <span class="badge badge-gold" style="margin-bottom: 6px;">ARCADE TOKENS</span>
+                <h3 style="font-size: 1.85rem; color: #ffffff;">Tekken Coin Pricing</h3>
+              </div>
+            </div>
+            <p style="color: #cbd5e1; max-width: 480px; font-size: 0.95rem;">
+              Insert coins, pick your fighter, and battle 1v1. Buy more coins to unlock non-stop fighting action!
+            </p>
+          </div>
+
+          <div class="arcade-coins-grid">
+            
+            <!-- Tier 1 -->
+            <div class="arcade-coin-card">
+              <div class="coin-price-tag">₹10</div>
+              <div class="coin-amount-box">
+                <span class="coin-count">6 Coins</span>
+              </div>
+              <div class="coin-label">Starter Pack</div>
+            </div>
+
+            <!-- Tier 2 -->
+            <div class="arcade-coin-card">
+              <div class="coin-price-tag">₹20</div>
+              <div class="coin-amount-box">
+                <span class="coin-count">12 Coins</span>
+              </div>
+              <div class="coin-label">Fighter Pack</div>
+            </div>
+
+            <!-- Tier 3: Popular -->
+            <div class="arcade-coin-card card-popular">
+              <span class="coin-card-tag tag-popular">MOST POPULAR</span>
+              <div class="coin-price-tag" style="color: var(--neon-gold);">₹50</div>
+              <div class="coin-amount-box" style="background: rgba(255, 170, 0, 0.15); border: 1px solid rgba(255, 170, 0, 0.3);">
+                <span class="coin-count">30 Coins</span>
+              </div>
+              <div class="coin-label" style="color: #ffffff; font-weight: 700;">Brawler Pack</div>
+            </div>
+
+            <!-- Tier 4: Best Value -->
+            <div class="arcade-coin-card card-best-value">
+              <span class="coin-card-tag tag-best">BEST VALUE</span>
+              <div class="coin-price-tag" style="color: var(--neon-green);">₹100</div>
+              <div class="coin-amount-box" style="background: rgba(0, 255, 136, 0.15); border: 1px solid rgba(0, 255, 136, 0.3);">
+                <span class="coin-count">60 Coins</span>
+              </div>
+              <div class="coin-label" style="color: #ffffff; font-weight: 700;">Arcade Champion</div>
+            </div>
+
+          </div>
+
+          <!-- CSSUI-INSPIRED Interactive Budget Calculator Widget -->
+          <div class="calc-widget-wrap">
+            <div class="calc-info">
+              <span class="calc-icon">⚡</span>
+              <div>
+                <strong style="display: block; font-size: 1rem; color: #ffffff;">Quick Budget Calculator</strong>
+                <span style="font-size: 0.84rem; color: var(--text-muted);">See what you get for your pocket money</span>
+              </div>
+            </div>
+
+            <div class="calc-slider-wrap">
+              <span id="calc-budget-display" style="font-weight: 800; color: var(--neon-cyan); min-width: 55px; font-family: var(--font-heading);">₹50</span>
+              <input type="range" class="calc-slider" id="budget-calc-slider" min="10" max="200" step="10" value="50" aria-label="Budget Slider">
+            </div>
+
+            <div style="display: flex; gap: 8px;">
+              <span class="calc-result-pill" id="calc-coins-result">30 Arcade Coins</span>
+              <span class="calc-result-pill" id="calc-hours-result" style="border-color: var(--neon-purple); background: rgba(168, 85, 247, 0.1);">or 1 Console Hour</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prominent Note Required by User -->
+        <div class="pricing-notice-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+          </svg>
+          <div>
+            <strong>Ask at the counter for current offers and tournament pricing.</strong>
+            <span style="display: block; font-size: 0.85rem; color: var(--text-secondary); margin-top: 2px;">
+              We offer special student discounts, group pass bundles, and weekend tournament passes at the desk!
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. WHY PLAY AT THE GAMING ARENA?
+         ======================================================================= -->
+    <section class="section" id="why-us">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-green section-tag">THE LOCAL GAMERS' CHOICE</span>
+          <h2 class="section-title">WHY PLAY AT <span class="highlight-cyan">THE GAMING ARENA?</span></h2>
+          <p class="section-subtitle">
+            Built from the ground up for gaming fans who want high-energy competition, great company, and zero lag.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          
+          <!-- Card 1 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper" style="color: var(--neon-cyan);">🎮</div>
+            <h3 class="feature-title">Latest Gaming Consoles</h3>
+            <p class="feature-desc">PS5 and PS4 setups regularly updated with the newest games, firmware, and pristine controllers.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper" style="color: var(--neon-gold);">🥊</div>
+            <h3 class="feature-title">Competitive Fighting Games</h3>
+            <p class="feature-desc">Authentic Tekken arcade cabinets and zero-delay battle monitors calibrated for high-speed combos.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper" style="color: var(--neon-purple);">👥</div>
+            <h3 class="feature-title">Multiplayer Gaming</h3>
+            <p class="feature-desc">Gather your crew for 2v2 football rivalries, 4-player party games, and split-screen co-op thrills.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper" style="color: var(--neon-gold);">🏆</div>
+            <h3 class="feature-title">Local Tournaments</h3>
+            <p class="feature-desc">Regular weekly and weekend showdowns with real cash prizes, arena trophies, and community bragging rights.</p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper" style="color: var(--neon-green);">⚡</div>
+            <h3 class="feature-title">Smooth Gaming Experience</h3>
+            <p class="feature-desc">Ultra-low input lag monitors, ergonomic gaming chairs, air conditioning, and high-speed dedicated fiber connection.</p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper" style="color: var(--neon-red);">🔥</div>
+            <h3 class="feature-title">Friendly Gaming Community</h3>
+            <p class="feature-desc">A lively, welcoming environment where you can connect with local gamers, find new rivals, and level up together.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. GAMES SECTION (WHAT CAN YOU PLAY?)
+         ======================================================================= -->
+    <section class="section" id="games">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-purple section-tag">MASSIVE GAME LIBRARY</span>
+          <h2 class="section-title">WHAT CAN YOU <span class="highlight-cyan">PLAY?</span></h2>
+          <p class="section-subtitle">
+            From intense 1v1 fighting games to high-stakes football and party battles. Here are popular titles frequently played at the arena.
+          </p>
+        </div>
+
+        <!-- Important Disclaimer Banner -->
+        <div class="games-disclaimer-banner">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+            <line x1="12" y1="9" x2="12" y2="13"></line>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+          <div>
+            <strong>Important:</strong> Games available may vary. Please check at the counter or WhatsApp us to verify current installed titles.
+          </div>
+        </div>
+
+        <!-- CodePeek Filter Pills Toolbar -->
+        <div class="games-filter-bar">
+          <button class="filter-pill active" data-filter="all">All Games <small class="pill-count">12</small></button>
+          <button class="filter-pill" data-filter="ps5">PS5 <small class="pill-count">10</small></button>
+          <button class="filter-pill" data-filter="ps4">PS4 <small class="pill-count">9</small></button>
+          <button class="filter-pill" data-filter="fighting">Fighting <small class="pill-count">5</small></button>
+          <button class="filter-pill" data-filter="sports">Sports <small class="pill-count">3</small></button>
+          <button class="filter-pill" data-filter="multiplayer">Multiplayer <small class="pill-count">10</small></button>
+        </div>
+
+        <!-- Games Grid (Hydrated by app.js from ARENA_CONFIG.gamesCatalog) -->
+        <div class="games-grid" id="games-grid">
+          <!-- Fallback game in case JS is disabled -->
+          <div class="game-card">
+            <div class="game-cover-art" style="background: linear-gradient(135deg, #0d3b66, #00f0ff);">
+              <span class="game-cover-icon">⚽</span>
+              <span class="game-platform-tag">PS5 & PS4</span>
+            </div>
+            <div class="game-info-body">
+              <h4 class="game-title">EA SPORTS FC 25 / FC 24</h4>
+              <span class="game-genre">Sports / Football</span>
+              <div class="game-meta-row">
+                <span>👥 1 - 4 Players</span>
+                <span style="color: var(--neon-cyan); font-weight: 700;">Top Pick</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. TOURNAMENT SECTION (READY TO COMPETE?)
+         ======================================================================= -->
+    <section class="section tournaments-section" id="tournaments">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-gold section-tag">CLIMB THE ARENA LEADERBOARD</span>
+          <h2 class="section-title">READY TO <span class="highlight-purple">COMPETE?</span></h2>
+          <p class="section-subtitle" style="font-size: 1.2rem; font-weight: 600; color: #f8fafc;">
+            “Challenge your friends, climb the leaderboard and prove you're the best.”
+          </p>
+        </div>
+
+        <!-- Tournaments Grid (Hydrated / enhanced by app.js from ARENA_CONFIG.tournaments) -->
+        <div class="tournaments-grid" id="tournaments-grid">
+          
+          <!-- Tournament 1: Tekken -->
+          <div class="tournament-card">
+            <div class="tournament-top-meta">
+              <span class="badge badge-cyan">Fighting</span>
+              <span style="font-size: 0.8rem; color: var(--neon-green); font-weight: 700;">🟢 8 Slots Open</span>
+            </div>
+            <h3 class="tournament-title">Tekken 8 Arena King</h3>
+            <div class="tournament-details-list">
+              <div class="tournament-detail-item">
+                <span class="item-label">📅 Date & Time:</span>
+                <span class="item-value">Upcoming Saturday • 5:00 PM onwards</span>
+              </div>
+              <div class="tournament-detail-item">
+                <span class="item-label">⚔️ Game & Format:</span>
+                <span class="item-value">Tekken 8 (1v1 Double Elimination Bracket)</span>
+              </div>
+              <div class="tournament-detail-item">
+                <span class="item-label">🎟️ Entry Fee:</span>
+                <span class="item-value" style="color: var(--neon-cyan);">₹100</span>
+              </div>
+              <div class="tournament-detail-item">
+                <span class="item-label">🏆 Prize Pool:</span>
+                <span class="item-value prize-pool-highlight">₹2,500 Cash + Arena Champion Trophy</span>
+              </div>
+            </div>
+            <div class="tournament-card-footer">
+              <button class="btn btn-purple open-tourney-btn" style="width: 100%;" data-tourney="Tekken 8 Arena King" data-game="Tekken 8" data-fee="₹100">
+                Join Tournament
+              </button>
+            </div>
+          </div>
+
+          <!-- Tournament 2: EA FC -->
+          <div class="tournament-card">
+            <div class="tournament-top-meta">
+              <span class="badge badge-purple">Sports</span>
+              <span style="font-size: 0.8rem; color: var(--neon-green); font-weight: 700;">🟢 6 Slots Open</span>
+            </div>
+            <h3 class="tournament-title">EA SPORTS FC Showdown</h3>
+            <div class="tournament-details-list">
+              <div class="tournament-detail-item">
+                <span class="item-label">📅 Date & Time:</span>
+                <span class="item-value">Upcoming Sunday • 4:00 PM onwards</span>
+              </div>
+              <div class="tournament-detail-item">
+                <span class="item-label">⚔️ Game & Format:</span>
+                <span class="item-value">EA SPORTS FC (1v1 Knockout Tournament)</span>
+              </div>
+              <div class="tournament-detail-item">
+                <span class="item-label">🎟️ Entry Fee:</span>
+                <span class="item-value" style="color: var(--neon-cyan);">₹150</span>
+              </div>
+              <div class="tournament-detail-item">
+                <span class="item-label">🏆 Prize Pool:</span>
+                <span class="item-value prize-pool-highlight">₹3,500 Cash + Free Game Hours Pass</span>
+              </div>
+            </div>
+            <div class="tournament-card-footer">
+              <button class="btn btn-purple open-tourney-btn" style="width: 100%;" data-tourney="EA SPORTS FC Showdown" data-game="EA SPORTS FC" data-fee="₹150">
+                Join Tournament
+              </button>
+            </div>
+          </div>
+
+          <!-- Tournament 3: Mortal Kombat -->
+          <div class="tournament-card">
+            <div class="tournament-top-meta">
+              <span class="badge badge-green">Fighting</span>
+              <span style="font-size: 0.8rem; color: var(--neon-green); font-weight: 700;">🟢 10 Slots Open</span>
+            </div>
+            <h3 class="tournament-title">Mortal Kombat Fatality Clash</h3>
+            <div class="tournament-details-list">
+              <div class="tournament-detail-item">
+                <span class="item-label">📅 Date & Time:</span>
+                <span class="item-value">Next Weekend • 6:00 PM onwards</span>
+              </div>
+              <div class="tournament-detail-item">
+                <span class="item-label">⚔️ Game & Format:</span>
+                <span class="item-value">Mortal Kombat 1 (Best of 3 Sets)</span>
+              </div>
+              <div class="tournament-detail-item">
+                <span class="item-label">🎟️ Entry Fee:</span>
+                <span class="item-value" style="color: var(--neon-cyan);">₹100</span>
+              </div>
+              <div class="tournament-detail-item">
+                <span class="item-label">🏆 Prize Pool:</span>
+                <span class="item-value prize-pool-highlight">₹2,000 Cash + 60 Arcade Coins</span>
+              </div>
+            </div>
+            <div class="tournament-card-footer">
+              <button class="btn btn-purple open-tourney-btn" style="width: 100%;" data-tourney="Mortal Kombat Fatality Clash" data-game="Mortal Kombat 1" data-fee="₹100">
+                Join Tournament
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Admin / Owner Hint Note -->
+        <div class="admin-hint-box">
+          💡 <em>Notice: Tournament schedules and prizes can be easily updated in <code>config.js</code> at any time.</em>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         7. GALLERY (INSIDE THE CAFÉ)
+         ======================================================================= -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-cyan section-tag">INSIDE THE CAFÉ</span>
+          <h2 class="section-title">CAFÉ <span class="highlight-cyan">GALLERY</span></h2>
+          <p class="section-subtitle">
+            Take a look at our PS5 setups, PS4 consoles, Tekken arcade machines, and high-energy atmosphere.
+          </p>
+        </div>
+
+        <!-- Masonry / Responsive Grid (Click to open lightbox preview) -->
+        <div class="gallery-grid" id="gallery-grid">
+          
+          <!-- Photo 1: PS5 setups -->
+          <div class="gallery-item" data-title="PS5 Pro Lounge Station" data-desc="4K ultra-low latency curved displays and ergonomic gaming seating.">
+            <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80" alt="PS5 Pro Lounge Station at The Gaming Arena" loading="lazy">
+            <div class="gallery-overlay">
+              <h4 class="gallery-title">PS5 Pro Lounge Station</h4>
+              <span class="gallery-caption">4K ultra-low latency curved displays</span>
+            </div>
+          </div>
+
+          <!-- Photo 2: Tekken arcade machines -->
+          <div class="gallery-item" data-title="Tekken Arcade & Fight Stick Arena" data-desc="Dedicated 1v1 battle station equipped for lightning-quick combos.">
+            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80" alt="Tekken Arcade and Fight Stick Station" loading="lazy">
+            <div class="gallery-overlay">
+              <h4 class="gallery-title">Tekken Arcade & Fight Corner</h4>
+              <span class="gallery-caption">Dedicated 1v1 battle station & fight sticks</span>
+            </div>
+          </div>
+
+          <!-- Photo 3: Players competing -->
+          <div class="gallery-item" data-title="Multiplayer Squad Session" data-desc="Friends locked into a heated 4-player football clash.">
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80" alt="Players competing in multiplayer match" loading="lazy">
+            <div class="gallery-overlay">
+              <h4 class="gallery-title">Players Competing</h4>
+              <span class="gallery-caption">Friends locked into intense multiplayer battles</span>
+            </div>
+          </div>
+
+          <!-- Photo 4: PS4 setups -->
+          <div class="gallery-item" data-title="PS4 Multiplayer Vault" data-desc="Cozy co-op console station loaded with hundreds of games.">
+            <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&w=800&q=80" alt="PS4 multiplayer gaming setup" loading="lazy">
+            <div class="gallery-overlay">
+              <h4 class="gallery-title">PS4 Multiplayer Vault</h4>
+              <span class="gallery-caption">Co-op console stations with massive game libraries</span>
+            </div>
+          </div>
+
+          <!-- Photo 5: Gaming Setups & Tournaments -->
+          <div class="gallery-item" data-title="Tournament Final Showdown" data-desc="Crowd cheering during the Tekken King weekend finals.">
+            <img src="https://images.unsplash.com/photo-1511882150382-421056c89033?auto=format&fit=crop&w=800&q=80" alt="Gaming setups during tournament finals" loading="lazy">
+            <div class="gallery-overlay">
+              <h4 class="gallery-title">Gaming Setups & Tournaments</h4>
+              <span class="gallery-caption">High energy competitions & spectator crowd</span>
+            </div>
+          </div>
+
+          <!-- Photo 6: Café interior -->
+          <div class="gallery-item" data-title="Café Interior & Chill Zone" data-desc="Premium cyberpunk lighting, air conditioning, cold drinks and gaming vibes.">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="The Gaming Arena cafe interior and neon lounge" loading="lazy">
+            <div class="gallery-overlay">
+              <h4 class="gallery-title">Café Interior & Chill Zone</h4>
+              <span class="gallery-caption">Cyberpunk neon lighting, AC & refreshments</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         8. CSSUI PURE CSS ACCORDION (ARENA FAQ & RULES)
+         (https://www.cssui.dev/docs/components/accordion/)
+         ======================================================================= -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-codepeek section-tag">HELP & INFORMATION</span>
+          <h2 class="section-title">FREQUENTLY ASKED <span class="highlight-cyan">QUESTIONS</span></h2>
+          <p class="section-subtitle">
+            Got questions before dropping by? Here is everything you need to know about our stations, controllers, and rules.
+          </p>
+        </div>
+
+        <!-- CSSUI Accordion Container with data-accordion -->
+        <div data-accordion>
+          <!-- Item 1 -->
+          <div data-accordion-item>
+            <input type="checkbox" id="faq-item-1">
+            <label for="faq-item-1" data-accordion-label>
+              <span>Can I bring my own controller or fight stick?</span>
+              <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </label>
+            <div data-accordion-panel>
+              Yes, absolutely! You are welcome to plug in your own personal DualSense, DualShock 4, or standard arcade fight stick at any of our PlayStation 5, PS4, or arcade fighting stations.
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div data-accordion-item>
+            <input type="checkbox" id="faq-item-2">
+            <label for="faq-item-2" data-accordion-label>
+              <span>How do the Tekken arcade coins work?</span>
+              <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </label>
+            <div data-accordion-panel>
+              Our Tekken cabinets operate with arcade tokens! Tokens start at just ₹10 for 6 coins. Each coin grants full match credits for intense 1v1 bouts. The more tokens you purchase, the more matches you get.
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div data-accordion-item>
+            <input type="checkbox" id="faq-item-3">
+            <label for="faq-item-3" data-accordion-label>
+              <span>Can we book multiple consoles for a squad session or birthday party?</span>
+              <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </label>
+            <div data-accordion-panel>
+              Yes! We regularly host squad gaming sessions and party bookings. Contact us on WhatsApp in advance to lock in your preferred consoles, snacks, and seating.
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div data-accordion-item>
+            <input type="checkbox" id="faq-item-4">
+            <label for="faq-item-4" data-accordion-label>
+              <span>Are the games updated with the latest seasons and DLCs?</span>
+              <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </label>
+            <div data-accordion-panel>
+              All installed titles including EA SPORTS FC 25, Tekken 8, Mortal Kombat 1, and Call of Duty are kept fully up to date with the latest rosters, seasons, and patches.
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div data-accordion-item>
+            <input type="checkbox" id="faq-item-5">
+            <label for="faq-item-5" data-accordion-label>
+              <span>How do I register for weekend tournaments?</span>
+              <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </label>
+            <div data-accordion-panel>
+              Browse the 'Ready to Compete?' section above and click 'Join Tournament' to submit your gamer details, or message us directly on WhatsApp.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         9. LOCATION / MAP SECTION
+         ======================================================================= -->
+    <section class="section location-section" id="location">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-green section-tag">DROP BY TODAY</span>
+          <h2 class="section-title">FIND <span class="highlight-cyan">THE GAMING ARENA</span></h2>
+          <p class="section-subtitle">
+            Easily accessible with plenty of spots for you and your friends. Check the map below and get one-tap directions!
+          </p>
+        </div>
+
+        <div class="location-layout">
+          
+          <!-- Interactive Map Container -->
+          <div class="map-card-wrapper">
+            <div class="map-frame-header">
+              <div class="map-status-pill">
+                <span class="pulse-dot"></span>
+                <span>The Gaming Arena Pin</span>
+              </div>
+              <a href="#" class="btn btn-codepeek btn-sm cfg-directions-link">
+                Get Directions ↗
+              </a>
+            </div>
+
+            <div class="map-iframe-container">
+              <!-- Responsive Google Maps Embed -->
+              <iframe
+                id="google-map-iframe"
+                title="The Gaming Arena Google Map Location"
+                src="https://maps.google.com/maps?q=[ENTER+GAMING+ARENA+ADDRESS+HERE]&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                loading="lazy"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Location Info Card -->
+          <div class="location-info-card">
+            <div class="glass-card">
+              
+              <!-- Address Highlight Box -->
+              <div class="address-highlight-box">
+                <div class="address-label-row">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Café Location</span>
+                </div>
+                <!-- Placeholder Required by User -->
+                <div class="actual-address-text cfg-address">
+                  [ENTER GAMING ARENA ADDRESS HERE]
+                </div>
+                <div class="address-placeholder-note">
+                  <em>(Replace this placeholder in config.js with your real street address)</em>
+                </div>
+              </div>
+
+              <!-- Perks / Logistics -->
+              <div class="location-perks-list" style="margin-top: 24px;">
+                <div class="location-perk-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Convenient Location:</strong> Easily accessible by metro, bus, and bike</span>
+                </div>
+                <div class="location-perk-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Parking:</strong> Easy two-wheeler and vehicle parking nearby</span>
+                </div>
+                <div class="location-perk-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Cold Refreshments:</strong> Energy drinks, snacks & cold beverages available</span>
+                </div>
+              </div>
+
+              <div style="margin-top: 28px;">
+                <a href="#" class="btn btn-primary btn-lg cfg-directions-link" style="width: 100%;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+                  </svg>
+                  Get Directions in Google Maps
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         10. CONTACT SECTION
+         ======================================================================= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-cyan section-tag">GET IN TOUCH</span>
+          <h2 class="section-title">CONTACT <span class="highlight-cyan">US</span></h2>
+          <p class="section-subtitle">
+            Need to book a station for your squad, register for a tournament, or ask about game availability? Reach out right now!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Channels & Direct Action Buttons -->
+          <div>
+            <div class="contact-channels-list">
+              
+              <!-- Phone -->
+              <div class="contact-channel-card">
+                <div class="channel-icon-circle" style="color: var(--neon-cyan);">📞</div>
+                <div>
+                  <span class="channel-title">Phone</span>
+                  <div class="channel-value cfg-phone-text">[PHONE NUMBER]</div>
+                </div>
+              </div>
+
+              <!-- WhatsApp -->
+              <div class="contact-channel-card">
+                <div class="channel-icon-circle" style="color: #25d366;">💬</div>
+                <div>
+                  <span class="channel-title">WhatsApp</span>
+                  <div class="channel-value cfg-whatsapp-text">[WHATSAPP NUMBER]</div>
+                </div>
+              </div>
+
+              <!-- Instagram -->
+              <div class="contact-channel-card">
+                <div class="channel-icon-circle" style="color: #e1306c;">📸</div>
+                <div>
+                  <span class="channel-title">Instagram</span>
+                  <div class="channel-value cfg-instagram-text">[INSTAGRAM]</div>
+                </div>
+              </div>
+
+              <!-- Address -->
+              <div class="contact-channel-card">
+                <div class="channel-icon-circle" style="color: var(--neon-gold);">📍</div>
+                <div>
+                  <span class="channel-title">Address</span>
+                  <div class="channel-value cfg-address" style="font-size: 0.85rem;">[ADDRESS]</div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Big Tactile Action Buttons -->
+            <div class="contact-action-buttons">
+              <a href="tel:[PHONE NUMBER]" class="btn btn-call btn-lg cfg-phone-link">
+                📞 Call Now
+              </a>
+
+              <a href="#" class="btn btn-whatsapp btn-lg cfg-whatsapp-link">
+                💬 WhatsApp
+              </a>
+
+              <a href="#" class="btn btn-instagram btn-lg cfg-instagram-link">
+                📸 Instagram
+              </a>
+
+              <a href="#" class="btn btn-secondary btn-lg cfg-directions-link">
+                📍 Get Directions
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Station Inquiry Form (Sends formatted message to WhatsApp) -->
+          <div class="booking-form-card">
+            <div class="form-header">
+              <h3>🎮 Reserve Station or Ask a Question</h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary);">Fill out this quick form to send an instant reservation inquiry directly to our WhatsApp.</p>
+            </div>
+
+            <form id="station-booking-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="book-name">Your Name</label>
+                  <input type="text" id="book-name" class="form-input" placeholder="e.g. Alex" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="book-phone">Phone / WhatsApp</label>
+                  <input type="tel" id="book-phone" class="form-input" placeholder="e.g. 9876543210" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="book-console">Gaming Setup</label>
+                  <select id="book-console" class="form-select">
+                    <option value="PS5 Console">PlayStation 5 (₹50/hr)</option>
+                    <option value="PS4 Console">PlayStation 4 (₹50/hr)</option>
+                    <option value="Tekken Arcade Station">Tekken Arcade Corner (Coins)</option>
+                    <option value="General Inquiry">General Question</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="book-players">Number of Players</label>
+                  <select id="book-players" class="form-select">
+                    <option value="1 Player">1 Player</option>
+                    <option value="2 Players">2 Players (1v1)</option>
+                    <option value="3-4 Players Squad">3 - 4 Players (Party)</option>
+                    <option value="5+ Group">5+ Group Session</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="book-time">Preferred Time / Date</label>
+                <input type="text" id="book-time" class="form-input" placeholder="e.g. Today at 6:00 PM">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="book-notes">Favorite Games / Special Requests (Optional)</label>
+                <textarea id="book-notes" class="form-textarea" rows="2" placeholder="e.g. Tekken 8, EA FC 25, extra controller"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-whatsapp btn-lg" style="width: 100%;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+                </svg>
+                Send Booking Inquiry on WhatsApp
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         11. OPENING HOURS SECTION
+         ======================================================================= -->
+    <section class="section" id="hours">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-green section-tag">DAILY SCHEDULE</span>
+          <h2 class="section-title">OPENING <span class="highlight-cyan">HOURS</span></h2>
+          <p class="section-subtitle">
+            We are open 7 days a week for daytime sessions and late-evening gaming battles.
+          </p>
+        </div>
+
+        <div class="hours-widget-card">
+          <div class="hours-widget-head">
+            <div>
+              <h3 style="font-size: 1.6rem; margin-bottom: 4px; color: #ffffff;">The Gaming Arena Schedule</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary);">Walk-ins welcome anytime during open hours.</p>
+            </div>
+
+            <!-- Real-time dynamic Open/Closed badge -->
+            <div class="live-status-pill live-status-badge status-open">
+              <span class="pulse-dot"></span> OPEN NOW • Closes 10:00 PM
+            </div>
+          </div>
+
+          <div class="hours-schedule-row">
+            <div class="hours-days cfg-hours-days">Monday – Sunday</div>
+            <div class="hours-timing cfg-hours-timing">11:00 AM – 10:00 PM</div>
+          </div>
+
+          <div class="hours-footnote">
+            ℹ️ <em>Easy configuration note: Hours can be edited from one central location in <code>config.js</code>.</em>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       12. FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        <!-- Brand Info -->
+        <div>
+          <a href="#hero" class="brand-logo" style="margin-bottom: 14px;">
+            <div class="brand-icon">🎮</div>
+            <div class="brand-text-wrap">
+              <span class="brand-name">THE GAMING <span>ARENA</span></span>
+            </div>
+          </a>
+          <p class="footer-brand-bio">
+            “Play. Compete. Enjoy.”<br>
+            Your neighborhood gaming destination for PS5, PS4, and Tekken arcade excitement.
+          </p>
+
+          <div class="footer-social-links">
+            <a href="#" class="footer-social-btn cfg-instagram-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="footer-social-btn cfg-whatsapp-link" aria-label="WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer-social-btn cfg-phone-link" aria-label="Phone">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero" class="footer-link">Home</a></li>
+            <li><a href="#options" class="footer-link">Experience</a></li>
+            <li><a href="#prices" class="footer-link">Game Prices</a></li>
+            <li><a href="#games" class="footer-link">What You Can Play</a></li>
+            <li><a href="#tournaments" class="footer-link">Tournaments</a></li>
+            <li><a href="#gallery" class="footer-link">Gallery</a></li>
+            <li><a href="#faq" class="footer-link">Arena FAQ</a></li>
+            <li><a href="#location" class="footer-link">Location & Map</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Gaming Experiences -->
+        <div>
+          <h4 class="footer-col-title">Gaming</h4>
+          <ul class="footer-links-list">
+            <li><a href="#prices" class="footer-link">PS5 - ₹50 / hr</a></li>
+            <li><a href="#prices" class="footer-link">PS4 - ₹50 / hr</a></li>
+            <li><a href="#prices" class="footer-link">Tekken Arcade Coins</a></li>
+            <li><a href="#tournaments" class="footer-link">Weekend Brackets</a></li>
+            <li><a href="#contact" class="footer-link">Squad Bookings</a></li>
+          </ul>
+        </div>
+
+        <!-- Opening Hours & Address -->
+        <div>
+          <h4 class="footer-col-title">Visit Us</h4>
+          <p style="font-size: 0.92rem; color: #cbd5e1; margin-bottom: 8px;">
+            <strong style="color: #ffffff;">Hours:</strong><br>
+            <span class="cfg-hours-days">Monday – Sunday</span><br>
+            <span class="cfg-hours-timing" style="color: var(--neon-cyan);">11:00 AM – 10:00 PM</span>
+          </p>
+          <p style="font-size: 0.88rem; color: var(--text-muted);">
+            <strong style="color: #ffffff;">Address:</strong><br>
+            <span class="cfg-address">[ENTER GAMING ARENA ADDRESS HERE]</span>
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Copyright -->
+      <div class="footer-bottom">
+        <div>
+          © 2026 The Gaming Arena. All Rights Reserved.
+        </div>
+        <div>
+          Built for gamers • Pure competitive thrill
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       13. MOBILE FLOATING QUICK ACTION BAR
+       ========================================================================= -->
+  <aside class="mobile-bottom-bar" aria-label="Mobile Quick Actions">
+    <div class="mobile-bar-actions">
+      <a href="tel:[PHONE NUMBER]" class="mobile-bar-btn btn-call cfg-phone-link">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+        <span>Call Now</span>
+      </a>
+
+      <a href="#" class="mobile-bar-btn btn-whatsapp cfg-whatsapp-link">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+        </svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       14. CODEPEEK COMMAND PALETTE MODAL (⌘K / Ctrl+K)
+       ========================================================================= -->
+  <div class="cmd-modal" id="cmd-modal" role="dialog" aria-modal="true" aria-label="Command Palette">
+    <div class="cmd-dialog">
+      <div class="cmd-search-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="cmd-input" placeholder="Type a game, console, price or section…" autocomplete="off">
+        <kbd>ESC</kbd>
+      </div>
+      <div class="cmd-results-list" id="cmd-results"></div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       15. MODALS (Tournament Registration & Lightbox)
+       ========================================================================= -->
+
+  <!-- Tournament Registration Modal -->
+  <div class="modal-backdrop" id="tournament-modal" role="dialog" aria-modal="true" aria-labelledby="modal-tourney-title">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">✕</button>
+      <span class="badge badge-purple" style="margin-bottom: 10px;">SLOT REGISTRATION</span>
+      <h3 id="modal-tourney-title" style="font-size: 1.6rem; margin-bottom: 8px; color: #ffffff;">Enter Tournament</h3>
+      <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 22px;">
+        Register your spot and our tournament manager will confirm your bracket placement via WhatsApp.
+      </p>
+
+      <form id="tournament-reg-form">
+        <div class="form-group">
+          <label class="form-label" for="modal-tournament-name">Selected Tournament</label>
+          <input type="text" id="modal-tournament-name" class="form-input" readonly style="background: rgba(255, 255, 255, 0.05); color: var(--neon-cyan);">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="reg-player-name">Player Full Name</label>
+          <input type="text" id="reg-player-name" class="form-input" placeholder="e.g. Rahul Sharma" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="reg-player-tag">Gamertag / In-Game Name</label>
+          <input type="text" id="reg-player-tag" class="form-input" placeholder="e.g. ShadowFighter_99" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="reg-player-phone">WhatsApp Number</label>
+          <input type="tel" id="reg-player-phone" class="form-input" placeholder="e.g. 9876543210" required>
+        </div>
+
+        <button type="submit" class="btn btn-purple btn-lg" style="width: 100%; margin-top: 10px;">
+          Confirm & Send via WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Image Lightbox Modal -->
+  <div class="modal-backdrop lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="lightbox-close" aria-label="Close Lightbox">✕</button>
+      <img src="" alt="Café photo preview" id="lightbox-image" class="lightbox-img">
+      <div class="lightbox-details">
+        <h4 id="lightbox-title" style="font-size: 1.25rem; font-weight: 800; color: #ffffff;"></h4>
+        <p id="lightbox-desc" style="font-size: 0.9rem; color: var(--neon-cyan); margin-top: 4px;"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Central Configuration & Application Scripts -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
