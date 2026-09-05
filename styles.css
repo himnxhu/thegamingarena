@@ -2821,14 +2821,28 @@ button, input, select, textarea {
     padding: 7px;
   }
   .container {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 14px;
+    padding-right: 14px;
   }
   .hero-title {
-    font-size: 2.1rem;
+    font-size: 1.85rem;
+    line-height: 1.15;
+  }
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
   }
   .hero-cta-group .btn {
     width: 100%;
+    min-height: 46px;
+  }
+  .hero-quick-features {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
   .games-grid {
     grid-template-columns: 1fr;
@@ -2845,6 +2859,43 @@ button, input, select, textarea {
     text-align: center;
   }
   .price-number {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
+  }
+  .modal-box {
+    padding: 24px 18px;
+    max-width: 94vw;
+  }
+  .cmd-dialog {
+    max-width: 94vw;
+  }
+  .cmd-modal {
+    padding: 60px 10px 10px;
+  }
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .visual-screen-graphic {
+    max-height: 220px;
+  }
+}
+
+/* Extra small devices (under 360px) */
+@media (max-width: 360px) {
+  .brand-name {
+    font-size: 0.82rem;
+  }
+  .brand-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .brand-status-indicator {
+    font-size: 0.62rem;
+  }
+  .hero-title {
+    font-size: 1.65rem;
   }
 }
